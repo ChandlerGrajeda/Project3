@@ -1,14 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import HomePage from './Pages/HomePage'
+import ContactMePage from './Pages/ContactMePage';
+import ToDoPage from './Pages/ToDoPage';
+import Header from './Components/Header';
 
 function App() {
-  const [todos, setTodos] = useState([
-    { id: 1, text: 'Learn React', completed: 'Completed' },
-    { id: 2, text: 'Build a Todo App', completed: 'Completed' },
-    { id: 3, text: 'Submit Assignment', completed: 'Completed' }
-  ]);
+
   return (
-    <h1>To Do Application</h1>
+      <BrowserRouter>
+      <Header />
+      <Routes>
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/todo" element={<ToDoPage />} />
+          <Route path="/contactme" element={<ContactMePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
