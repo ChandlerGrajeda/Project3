@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import ToDoList from '../Components/ToDoList';
+import AddingTodos from '../Components/AddingTodos'
 
 
 export default function ToDoPage() {
@@ -9,7 +10,12 @@ export default function ToDoPage() {
     { id: 3, text: 'Submit Assignment', completed: 'Not Completed' }
   ]);
   return (
+    
+    <>
     <ToDoList todos={todos} setTodos={setTodos}/>
+    <AddingTodos todos={todos} setTodos={setTodos}/>
+    </>
+    
 
   )
 }
