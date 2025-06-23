@@ -2,9 +2,13 @@
 
 # Overview:
 
-A simple Webpage with a todo list, contact form, and home page
+A Webpage with different characteristics such as a todo list, contact form, and home page. Which involves keeping track of your todo's giving the feature of adding or deleting todos in a list along with a contact form!
 
 # Screenshot:
+
+<img src="./Images/Project3SS.png">
+<img src="./Images/Project3SS(2).png">
+<img src="./Images/Project3SS(3).png">
 
 # Technologies used:
 
@@ -20,6 +24,10 @@ A simple Webpage with a todo list, contact form, and home page
     - As a user I want to be able to navigate between different pages.
 
 # Wireframe:
+
+<img src="./Images/Project3WF(1).png">
+<img src="./Images/Project3WF(2).png">
+<img src="./Images/Project3WF(3).png">
 
 
 # Next Steps:
