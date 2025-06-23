@@ -1,14 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ContactMe from '../Components/ContactMe'
 
 
 export default function ContactMePage() {
-    const [ContactMe] = useState([
-    { Name: 1, Email: '', PhoneNumber: '' },
-    { Name: 2, Email: '', PhoneNumber: '' },
-    { Name: 3, Email: '', PhoneNumber: '' }
-  ]);
+    const [contactMe, setContactMe] = useState([
+    { userName: 1, userEmail: '', userNumber: '' },
+    { userName: 2, userEmail: '', userNumber: '' }]);
+
   return (
-    <ContactMe >
+    <ContactMe contactMe={contactMe} setContactMe={setContactMe} />
   )
 }
